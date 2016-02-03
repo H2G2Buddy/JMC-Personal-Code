@@ -78,6 +78,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RandomDice\RandomDice.csproj">
+      <Project>{0bbab90d-2c30-49fe-bee6-c5ed35a9c0b8}</Project>
+      <Name>RandomDice</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{3fdf07aa-de50-448b-af6e-0c96513deda3}</Project>
       <Name>Services</Name>
