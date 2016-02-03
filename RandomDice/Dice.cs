@@ -45,6 +45,7 @@ namespace RandomDice
     {
         public static int Roll(this Dice dice, int top = 1, int flops = 1)
         {
+            if (flops < top) flops = top;
             dice.Flop(flops);
             return dice.Flops
                 .OrderByDescending(d => d.Value)
